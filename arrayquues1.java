@@ -28,6 +28,7 @@ public class arrayquues1 {
         TripleSum( arr,target);
         findUnique(arr);
         findSecondLargest(arr);
+        findduplicate(arr);
         sc.close();
     }
    //find the total number of pairs in arrays whose sum is equal to the given value x
@@ -94,7 +95,7 @@ public class arrayquues1 {
                 mx=arr[i];
             }
         }
-        System.out.println("maximum element is : " +mx);     
+            
     return mx;
     }
     //find second largest
@@ -109,7 +110,23 @@ public class arrayquues1 {
         int secondMax=findMax(arr);
     System.out.println("Second largest element is: "+secondMax);
     }
-    
+
+
+    //find duplicates in a array------------------
+    static int findduplicate(int[] arr){
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(arr[i]==arr[j]){
+        
+                    return arr[i];
+                }
+                
+            }
+        }
+        return -1;
+    }
+
 
 
 
