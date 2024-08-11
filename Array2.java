@@ -30,7 +30,8 @@ public class Array2 {
         System.out.println(isSorted(arr));
         //sorted array
         System.out.println("smallest and largest elememt"+arr[0]+" "+arr[arr.length-1]);
-
+        smallestandlargest(arr);
+        sc.close();
     }
     //count the number of occurrances------
      static int CountOccuurences(int[] arr,int x){
